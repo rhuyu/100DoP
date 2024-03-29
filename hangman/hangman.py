@@ -37,9 +37,9 @@ while player_lives > 0:
                 found = True
         
         # Check for if a letter is in the display or not already to put out a keep going message.        
-        if found and guess not in display:
-            print(f"'{guess}' is in the word. Keep going!")
-        
+                if found and guess not in display:
+                    print(f"'{guess}' is in the word. Keep going!")
+            
         # Losing a life if letter not found and printing a statement that says so            
         if not found:
             player_lives -= 1
